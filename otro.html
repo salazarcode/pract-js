@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" onKeyDown="return mostrarCodigo(event);"/>
+    <script>
+function mostrarCodigo(evento){	
+     
+	 var codigo = (evento.which) ? evento.which : event.keyCode
+	 var nombreTecla = "";
+	
+	 if(codigo == 8){ nombreTecla = "backspace"; }
+	 if(codigo == 9){ nombreTecla = "tab"; }
+	 if(codigo == 13){ nombreTecla = "enter"; }
+	 if(codigo == 16){ nombreTecla = "shift"; }
+	 if(codigo == 17){ nombreTecla = "ctrl"; }
+	 if(codigo == 18){ nombreTecla = "alt"; }
+	 if(codigo == 19){ nombreTecla = "pause/break"; }
+	 if(codigo == 20){ nombreTecla = "caps lock"; }
+	 if(codigo == 27){ nombreTecla = "escape"; }
+     if(codigo == 32){ nombreTecla = "space"; }
+	 if(codigo == 33){ nombreTecla = "page up"; }
+	 if(codigo == 34){ nombreTecla = "page down"; }
+	 if(codigo == 35){ nombreTecla = "end"; }
+	 if(codigo == 36){ nombreTecla = "home"; }
+	 if(codigo == 37){ nombreTecla = "left arrow"; }
+	 if(codigo == 38){ nombreTecla = "up arrow"; }
+	 if(codigo == 39){ nombreTecla = "right arrow"; }
+	 if(codigo == 40){ nombreTecla = "down arrow"; }
+	 if(codigo == 45){ nombreTecla = "insert"; }
+	 if(codigo == 46){ nombreTecla = "delete"; }
+	 if(codigo == 91){ nombreTecla = "left window"; }
+	 if(codigo == 92){ nombreTecla = "right window"; }
+	 if(codigo == 93){ nombreTecla = "select key"; }
+	 if(codigo == 96){ nombreTecla = "numpad 0"; }
+	 if(codigo == 97){ nombreTecla = "numpad 1"; }
+	 if(codigo == 98){ nombreTecla = "numpad 2"; }
+	 if(codigo == 99){ nombreTecla = "numpad 3"; }
+	 if(codigo == 100){ nombreTecla = "numpad 4"; }
+	 if(codigo == 101){ nombreTecla = "numpad 5"; }
+	 if(codigo == 102){ nombreTecla = "numpad 6"; }
+	 if(codigo == 103){ nombreTecla = "numpad 7"; }
+	 if(codigo == 104){ nombreTecla = "numpad 8"; }
+	 if(codigo == 105){ nombreTecla = "numpad 9"; }
+	 if(codigo == 106){ nombreTecla = "multiply"; }
+	 if(codigo == 107){ nombreTecla = "add"; }
+	 if(codigo == 109){ nombreTecla = "subtract"; }
+	 if(codigo == 110){ nombreTecla = "decimal point"; }
+	 if(codigo == 111){ nombreTecla = "divide"; }
+	 if(codigo == 112){ nombreTecla = "F1"; }
+	 if(codigo == 113){ nombreTecla = "F2"; }
+	 if(codigo == 114){ nombreTecla = "F3"; }
+	 if(codigo == 115){ nombreTecla = "F4"; }
+	 if(codigo == 116){ nombreTecla = "F5"; }
+	 if(codigo == 117){ nombreTecla = "F6"; }
+	 if(codigo == 118){ nombreTecla = "F7"; }
+	 if(codigo == 119){ nombreTecla = "F8"; }
+	 if(codigo == 120){ nombreTecla = "F9"; }
+	 if(codigo == 121){ nombreTecla = "F10"; }
+	 if(codigo == 122){ nombreTecla = "F11"; }
+	 if(codigo == 123){ nombreTecla = "F12"; }
+	 if(codigo == 144){ nombreTecla = "num lock"; }
+	 if(codigo == 145){ nombreTecla = "scroll lock"; }
+	 if(codigo == 186){ nombreTecla = ";"; }
+	 if(codigo == 187){ nombreTecla = "="; }
+	 if(codigo == 188){ nombreTecla = ","; }
+	 if(codigo == 189){ nombreTecla = "-"; }
+	 if(codigo == 190){ nombreTecla = "."; }
+	 if(codigo == 191){ nombreTecla = "/"; }
+	 if(codigo == 192){ nombreTecla = "`"; }
+	 if(codigo == 219){ nombreTecla = "["; }
+	 if(codigo == 220){ nombreTecla = "\\"; }
+	 if(codigo == 221){ nombreTecla = "]"; }
+	 if(codigo == 222){ nombreTecla = "'"; }
+ 
+	alert('Codigo:  '+codigo+' Tecla: '+nombreTecla);
+ 
+ }
+    
+    </script>
+</body>
+</html>
