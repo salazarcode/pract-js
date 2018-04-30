@@ -10,18 +10,20 @@
    
     <input type="text" id="nombre">
     <input type="text" id="apellido">
-    <input type="button" value="Capturar" onclick="Capturar()">
+    <input id="accion" type="button" value="Capturar">
+
     <script>
-        var Capturar = function(){
-           var nombre = document.getElementById('nombre').value;
-           var apellido = document.getElementById('apellido').value;
-           var arreglo = {
-               "nombre" : nombre,
-               "apellido" : apellido
-           };
-           console.log(arreglo);
+
+        document.getElementById("accion").onclick = function(event){
+            var nombre = document.getElementById('nombre').value;
+            var apellido = document.getElementById('apellido').value;
+            var arreglo = {
+                "nombre" : nombre,
+                "apellido" : apellido
+            };
+            console.log(arreglo);
         }
-       
+
     </script>
 </body>
 </html>
