@@ -15,9 +15,11 @@
         var Capturar = function(){
            var nombre = document.getElementById('nombre').value;
            var apellido = document.getElementById('apellido').value;
-           var arreglo = [nombre, apellido];
-           var formulario = JSON.parse("nombre: " + arreglo[0]+ " apellido:" + arreglo[1] );
-           console.log(formulario);
+           var arreglo = {
+               "nombre" : nombre,
+               "apellido" : apellido
+           };
+           console.log(arreglo);
         }
        
     </script>
